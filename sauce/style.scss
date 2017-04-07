@@ -11,14 +11,16 @@ nav {
   background: $quaternary-color;
   border-style: solid;
   border-color: invert($quaternary-color);
+
   a {
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
     background: $quinary-color;
     color: invert($quinary-color);
     border-style: solid;
     border-color: lighten($quinary-color, 20);
     border-radius: $border-radius;
   }
+
   input {
     background: $quinary-color;
     color: invert($quinary-color);
@@ -41,13 +43,14 @@ h3 {
 }
 
 article {
-  padding: 0 10px 0 10px;
-  margin: 20px 0 0 0;
+  padding: 0 10px;
+  margin: 20px 0 0;
   background-color: $secondary-color;
   color: invert($secondary-color);
   border-style: dotted solid double dashed;
   border-color: invert($secondary-color);
   border-radius: $border-radius;
+
   h2 {
     background-color: $tertiary-color;
     color: invert($tertiary-color);
@@ -55,6 +58,7 @@ article {
     border-color: invert($tertiary-color);
     border-radius: $border-radius;
   }
+
   li {
     background-color: $tertiary-color;
     color: invert($tertiary-color);
