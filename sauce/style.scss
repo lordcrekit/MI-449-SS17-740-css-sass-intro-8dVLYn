@@ -4,6 +4,7 @@ body {
   background: $primary-color;
   color: invert($primary-color);
   font-size: $font-size;
+  font-family: $font;
 }
 
 nav {
@@ -22,6 +23,7 @@ nav {
   }
 
   input {
+    font-family: $font;
     background: $quinary-color;
     color: invert($quinary-color);
     border-style: solid;
