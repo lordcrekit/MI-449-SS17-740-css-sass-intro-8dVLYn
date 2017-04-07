@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Search.0</title>
-    <link rel="stylesheet" type="text/css" href="./comperiled/style.css"/>
-  </head>
-  <body>
+    <head>
+        <title>Search.0</title>
+        <link rel="stylesheet" type="text/css" href="./comperiled/css/style.css"/>
+    </head>
+    <body>
 
-    <!-- top navbar -->
-    <nav class="header">
-      <a class="button" href="#">Mail</a>
-      <a class="button" href="#">Login</a>
-    </nav>
+        <!-- top navbar -->
+        <nav>
+            <a class="button" href="#">Home</a>
+            <input type="text"/>
+            <input type="submit" value="search"/>
+            <a class="button" href="#">Login</a>
+        </nav>
 
-    <!-- content -->
-    <div class="content">
-      <!-- Logo -->
-      <h1>
-        <span class="ft cb">S</span>
-        <span class="ft cb">E</span>
-        <span class="ft cb">A</span>
-        <span class="ft cb">R</span>
-        <span class="ft cb">C</span>
-        <span class="ft cb">H</span>
-        <span class="ft cb">.</span>
-        <span class="ft cb">0</span>
-      </h1>
+        <header><h1>Library of Cangrass</h1></header>
 
-      <form action="javascript:search()" >
-        <!-- The searchbar -->
-        <div class="bar">
-          <input class="searchbar" id="searchbar" autocomplete="off" title="Search" type="text" value=""/>
-        </div>
+        <article>
+            <header><h2>Popular books</h2></header>
+            <p>A lot of these are just in, <small>and I totally didn't just get them from the front page of amazon</small>!</p>
+            <ul>
+                <li>
+                    <h3>Beartown: A Novel</h3>
+                    <small>Fredrik Backman</small>
+                    <p>The #1 New York Times bestselling author of A Man Called Ove returns with a dazzling, profound novel about a small town with a big dream—and the price required to make it come true.</p>
+                </li>
+                <li>
+                    <h3>American War: A novel</h3>
+                    <small>Omar El Akkad</small>
+                    <p>An audacious and powerful debut novel: a second American Civil War, a devastating plague, and one family caught deep in the middle—a story that asks what might happen if America were to turn its most devastating policies and deadly weapons upon itself.</p>
+                </li>
+                <li>
+                    <h3>Killers of the Flower Moon: The Osage Murders and the Birth of the FBI</h3>
+                    <small>David Grann</small>
+                    <p>In the 1920s, the richest people per capita in the world were members of the Osage Indian nation in Oklahoma. After oil was discovered beneath their land, they rode in chauffeured automobiles, built mansions, and sent their children to study in Europe.</p>
+                </li>
+            </ul>
+        </article>
 
-        <!-- The search buttons! -->
-        <span>
-          <input class="button" type="submit" value="Search.0 now!"/>
-          <input class="button" type="submit" value="Gamble"/>
-        </span>
-      </form>
-    </div>
 
-    <!-- Javascript -->
-    <script src="./assets/flash.js"></script>
-    <script src="./assets/colorborder.js"></script>
-    <script src="./assets/search.js"></script>
-  </body>
+        <!-- Javascript -->
+    </body>
 </html>

@@ -1,11 +1,65 @@
-$primary-color: #3b6e98;
+@import "./vars";
 
-a {
-  color: $primary-color;
+body {
+  background: $primary-color;
+  color: invert($primary-color);
+  font-size: $font-size;
 }
 
-button {
-  color: $primary-color;
-  border-color: $primary-color;
-  background-color: lighten($primary-color, 50%);
+nav {
+  padding: 3px;
+  background: $quaternary-color;
+  border-style: solid;
+  border-color: invert($quaternary-color);
+  a {
+    margin: 0 20px 0 20px;
+    background: $quinary-color;
+    color: invert($quinary-color);
+    border-style: solid;
+    border-color: lighten($quinary-color, 20);
+    border-radius: $border-radius;
+  }
+  input {
+    background: $quinary-color;
+    color: invert($quinary-color);
+    border-style: solid;
+    border-color: lighten($quinary-color, 20);
+    border-radius: $border-radius;
+  }
+}
+
+h1 {
+  font-size: $font-size*2;
+}
+
+h2 {
+  font-size: $font-size*1.5;
+}
+
+h3 {
+  font-size: $font-size*1.25;
+}
+
+article {
+  padding: 0 10px 0 10px;
+  margin: 20px 0 0 0;
+  background-color: $secondary-color;
+  color: invert($secondary-color);
+  border-style: dotted solid double dashed;
+  border-color: invert($secondary-color);
+  border-radius: $border-radius;
+  h2 {
+    background-color: $tertiary-color;
+    color: invert($tertiary-color);
+    border-style: solid;
+    border-color: invert($tertiary-color);
+    border-radius: $border-radius;
+  }
+  li {
+    background-color: $tertiary-color;
+    color: invert($tertiary-color);
+    border-style: solid;
+    border-color: invert($tertiary-color);
+    border-radius: $border-radius;
+  }
 }
