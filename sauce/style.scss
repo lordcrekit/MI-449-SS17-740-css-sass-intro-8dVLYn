@@ -7,65 +7,69 @@ body {
   font-family: $font;
 }
 
-nav {
-  padding: 3px;
-  background: $quaternary-color;
-  border-style: solid;
-  border-color: invert($quaternary-color);
-
-  a {
-    margin: 0 20px;
-    background: $quinary-color;
-    color: invert($quinary-color);
-    border-style: solid;
-    border-color: lighten($quinary-color, 20);
-    border-radius: $border-radius;
-  }
-
-  input {
-    font-family: $font;
-    background: $quinary-color;
-    color: invert($quinary-color);
-    border-style: solid;
-    border-color: lighten($quinary-color, 20);
-    border-radius: $border-radius;
-  }
-}
-
 h1 {
-  font-size: $font-size*2;
+  font-size: $font-size*3.0;
+  color: $secondary-color;
+  background: invert($secondary-color);
 }
 
 h2 {
-  font-size: $font-size*1.5;
+  font-size: $font-size*2.5;
+  color: lighten($secondary-color, 8);
+  background: invert(lighten($secondary-color, 8));
 }
 
 h3 {
-  font-size: $font-size*1.25;
+  font-size: $font-size*2.0;
+  color: lighten($secondary-color, 16);
+  background: invert(lighten($secondary-color, 16));
 }
 
-article {
-  padding: 0 10px;
-  margin: 20px 0 0;
-  background-color: $secondary-color;
-  color: invert($secondary-color);
-  border-style: dotted solid double dashed;
-  border-color: invert($secondary-color);
+h4 {
+  font-size: $font-size*1.75;
+  color: $tertiary-color;
+  background: invert($tertiary-color);
+}
+
+h5 {
+  font-size: $font-size*1.50;
+  color: lighten($tertiary-color, 8);
+  background: invert(lighten($tertiary-color, 8));
+}
+
+h6 {
+  font-size: $font-size*1.25;
+  color: lighten($tertiary-color, 16);
+  background: invert(lighten($tertiary-color, 16));
+}
+
+input {
+  background: invert($quaternary-color);
+  color: $quaternary-color;
+  font-size: $font-size;
+  font-family: $font;
+
+  &[type="text"] {
+    border-radius: $border-radius;
+  }
+}
+
+textarea {
+  background: invert($quaternary-color);
+  color: $quaternary-color;
+  font-size: $font-size;
+  font-family: $font;
   border-radius: $border-radius;
+}
 
-  h2 {
-    background-color: $tertiary-color;
-    color: invert($tertiary-color);
-    border-style: solid;
-    border-color: invert($tertiary-color);
-    border-radius: $border-radius;
-  }
+img {
+  border-radius: $border-radius;
+}
 
-  li {
-    background-color: $tertiary-color;
-    color: invert($tertiary-color);
-    border-style: solid;
-    border-color: invert($tertiary-color);
-    border-radius: $border-radius;
-  }
+tr {
+  border-radius: $border-radius;
+}
+
+th {
+  border-radius: $border-radius;
 }
