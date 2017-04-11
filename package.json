@@ -1,0 +1,9 @@
+{
+  "repository": "lordcrekit/MI-449-SS17-740-css-sass-intro-8dVLYn",
+  "license": "GPL-3.0+",
+  "scripts": {
+    "clean": "rm -rf comperiled/*",
+    "makecss": "npm run clean && node-sass sauce/style.scss --output comperiled/css --output-style=compressed --source-map=true",
+    "watchcss": "npm run clean && node-sass sauce/style.scss --output comperiled/css --output-style=compressed --source-map=true --watch"
+  }
+}
