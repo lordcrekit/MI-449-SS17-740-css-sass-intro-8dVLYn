@@ -3,8 +3,8 @@
   "license": "GPL-3.0+",
   "scripts": {
     "test": "stylelint sauce/_vars.scss sauce/style.scss --config .stylelint",
-    "clean": "rm -rf comperiled/*",
-    "makecss": "node-sass sauce/style.scss --output comperiled/css --output-style=compressed --source-map=true",
-    "watchcss": "node-sass --watch sauce/style.scss --output comperiled/css --output-style=compressed"
+    "clean": "rm -rf comperiled",
+    "makecss": "npm run clean && node-sass sauce/style.scss --output comperiled/css --output-style=compressed --source-map=true",
+    "watchcss": "npm run makecss && node-sass --watch sauce/style.scss --output comperiled/css --output-style=compressed"
   }
 }
