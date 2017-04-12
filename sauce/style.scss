@@ -1,4 +1,4 @@
-@import "./vars";
+@import "./_vars";
 
 body {
   background: $primary-color;
@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  font-size: $font-size*3.0;
+  font-size: $font-size*3;
   color: $secondary-color;
   background: invert($secondary-color);
 }
@@ -20,7 +20,7 @@ h2 {
 }
 
 h3 {
-  font-size: $font-size*2.0;
+  font-size: $font-size*2;
   color: lighten($secondary-color, 16);
   background: invert(lighten($secondary-color, 16));
 }
@@ -32,7 +32,7 @@ h4 {
 }
 
 h5 {
-  font-size: $font-size*1.50;
+  font-size: $font-size*1.5;
   color: lighten($tertiary-color, 8);
   background: invert(lighten($tertiary-color, 8));
 }
@@ -49,8 +49,27 @@ input {
   font-size: $font-size;
   font-family: $font;
 
+  &:hover {
+    background: lighten(invert($quaternary-color), 5);
+    color: lighten($quaternary-color, 5);
+  }
+
+  &[type="button"] {
+    border-radius: $border-radius;
+    border-width: $border-width;
+    border-style: outset;
+    border-color: lighten(invert($quaternary-color), 5);
+
+    &:active {
+      border-style: inset;
+    }
+  }
+
   &[type="text"] {
     border-radius: $border-radius;
+    border-width: $border-width;
+    border-style: $input-border-style;
+    border-color: lighten(invert($quaternary-color), 5);
   }
 }
 
@@ -60,16 +79,32 @@ textarea {
   font-size: $font-size;
   font-family: $font;
   border-radius: $border-radius;
+  border-width: $border-width;
+  border-style: $input-border-style;
+  border-color: lighten(invert($quaternary-color), 5);
+
+  &:hover {
+    background: lighten(invert($quaternary-color), 5);
+    color: lighten($quaternary-color, 5);
+  }
 }
 
 img {
   border-radius: $border-radius;
 }
 
-tr {
-  border-radius: $border-radius;
-}
-
 th {
   border-radius: $border-radius;
+  color: $quinary-color;
+  background: invert($quinary-color);
+  border-style: solid;
+  border-color: darken(invert($quinary-color), 10);
+}
+
+td {
+  border-radius: $border-radius;
+  color: lighten($quinary-color, 10);
+  background: lighten(invert($quinary-color), 10);
+  border-style: solid;
+  border-color: lighten(invert($quinary-color), 5);
 }
