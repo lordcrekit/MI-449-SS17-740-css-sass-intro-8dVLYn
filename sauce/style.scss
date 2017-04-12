@@ -71,6 +71,13 @@ input {
     border-style: $input-border-style;
     border-color: lighten(invert($quaternary-color), 5);
   }
+
+  &[type="password"] {
+    border-radius: $border-radius;
+    border-width: $border-width;
+    border-style: $input-border-style;
+    border-color: lighten(invert($quaternary-color), 5);
+  }
 }
 
 textarea {
